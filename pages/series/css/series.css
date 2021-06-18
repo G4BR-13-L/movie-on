@@ -61,7 +61,7 @@
     }
     .movie-card-series{
         margin: 0 10px;
-        max-height: 500px;
+        min-width: 250px !important;
     }
     .movie-poster-series{
         top: 0;

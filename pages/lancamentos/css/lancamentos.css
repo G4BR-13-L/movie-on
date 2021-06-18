@@ -51,23 +51,32 @@
 
 /* Telas pequenas */
 @media only screen and (max-width: 600px) {
-    .container-lancamentos{
+    .page-title{
+        font-size: 3rem;
+    }
+    .container-lancamentos {
         margin-top: 0px !important;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        height: 500px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     .movie-card-lancamentos{
         margin: 0 10px;
         max-height: 500px;
+        width: 40%;
+        border-radius: 10px;
     }
     .movie-poster-lancamentos{
         top: 0;
         width: 100%;
         overflow: hidden;
         transition: 200ms;
+        border-radius: 10px;
+       
+    }
+    .movie-poster-lancamentos img{
+        border-radius: 10px;
        
     }
     .movie-info-lancamentos{
