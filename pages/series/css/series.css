@@ -1,17 +1,17 @@
 
 
-.container-popular{
+.container-series{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.movie-card-popular{
+.movie-card-series{
     width: 250px;
     border-radius: 20px;
     margin: 0 10px;
 }
-.movie-poster-popular{
+.movie-poster-series{
     position: relative;
     bottom: 0;
     top: 0;
@@ -22,14 +22,14 @@
     transition: 200ms;
    
 }
-.movie-poster-popular img{
+.movie-poster-series img{
     width: 100%;
     border-radius: 20px;
 }
-.movie-poster-popular:hover{
+.movie-poster-series:hover{
     filter: opacity(0);
 }
-.movie-info-popular{
+.movie-info-series{
     max-height: 150px;
     z-index:0;
     width: 100%;
@@ -38,7 +38,7 @@
     transform: translateY(-160%);
     
 }
-.movie-info-popular ul{
+.movie-info-series ul{
     list-style: none;
 }
 
@@ -51,7 +51,7 @@
 
 /* Telas pequenas */
 @media only screen and (max-width: 600px) {
-    .container-popular{
+    .container-series{
         margin-top: 0px !important;
         display: flex;
         flex-direction: row;
@@ -59,18 +59,18 @@
         overflow-x: auto;
         height: 500px;
     }
-    .movie-card-popular{
+    .movie-card-series{
         margin: 0 10px;
         max-height: 500px;
     }
-    .movie-poster-popular{
+    .movie-poster-series{
         top: 0;
         width: 100%;
         overflow: hidden;
         transition: 200ms;
        
     }
-    .movie-info-popular{
+    .movie-info-series{
         transform: translateY(0) !important;
     }
 }

@@ -2,7 +2,7 @@
 function inicializarLancamentos() {
     let xhr1 = new XMLHttpRequest();
     xhr1.onload = carregarFilmes;
-    xhr1.open('GET', 'https://api.themoviedb.org/3/movie/top_rated?api_key=44d302b5c67a19b15c6effc9654af134&language=en-US&page=1')
+    xhr1.open('GET', 'https://api.themoviedb.org/3/tv/popular?api_key=44d302b5c67a19b15c6effc9654af134&language=pt-BR&page=1')
     xhr1.send();
 }
 
@@ -21,15 +21,15 @@ function carregarFilmes() {
     }
 }
 function renderizarFilmes(dadosFilme) {
-    var container = document.querySelector(`div.container-popular`)
-    var newDate = dadosFilme.release_date.split('-');
+    var container = document.querySelector(`div.container-series`)
+    var newDate = dadosFilme.first_air_date.split('-');
     var preRender = [];
     let preRenderText = `
-            <div class="movie-card-popular">
-                <div class="movie-poster-popular">
+            <div class="movie-card-series">
+                <div class="movie-poster-series">
                     <img src="https://image.tmdb.org/t/p/w185${dadosFilme.poster_path}" alt="">
                 </div>
-                <div class="movie-info-popular">
+                <div class="movie-info-series">
                     <ul>
                         <li>${dadosFilme.original_title}</li>
                         <li>${newDate[0]}</li>
