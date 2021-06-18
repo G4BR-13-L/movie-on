@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
 
   <!--======CSSS=======-->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="css/lancamentos.css">
   <title>Movie On</title>
 </head>
 
-<body onload="inicializacao()">
+<body onload="inicializarLancamentos()">
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo" onclick="inicializacao()">
@@ -31,7 +31,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="../../index.html" class="nav-link">
           <i class='bx bxs-movie-play'></i>
           <span class="link-text">Filmes</span>
         </a>
@@ -45,7 +45,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="pages/lancamentos/lancamentos.html" class="nav-link">
+        <a href="" class="nav-link">
           <i class='bx bxs-coupon'></i>
           <span class="link-text">Lançamentos</span>
         </a>
@@ -66,62 +66,28 @@
     </ul>
   </nav>
 
-
+  
   <main>
-    <h1 class="page-title">Filmes</h1>
-    <section>
-      <h2>Ação e aventura</h2>
-      <div class="container" id="g28">
-        <div class="movie-card">
-          <div class="movie-poster">
+    <h1 class="page-title">Lançamentos</h1>
+    
+    <div class="container-lancamentos">
+        <!--
+        <div class="movie-card-lancamentos">
+          <div class="movie-poster-lancamentos">
             <img src="https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/Ready-Player-One-recreate-poster-2.jpg"
             alt="">
           </div>
-          <div class="movie-info">
+          <div class="movie-info-lancamentos">
             <ul>
               <li>titulo</li>
               <li>ano</li>
             </ul>
           </div>
         </div>
+      -->
       </div>
-    </section>
-    <section>
-      <h2>Drama e suspense</h2>
-      <div class="container" id="g18">
-        <div class="movie-card">
-          <div class="movie-poster">
-            <img src="https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/Ready-Player-One-recreate-poster-2.jpg"
-            alt="">
-          </div>
-          <div class="movie-info">
-            <ul>
-              <li>titulo</li>
-              <li>ano</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2>Animações</h2>
-      <div class="container" id="g16">
-        <div class="movie-card">
-          <div class="movie-poster">
-            <img src="https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/Ready-Player-One-recreate-poster-2.jpg"
-            alt="">
-          </div>
-          <div class="movie-info">
-            <ul>
-              <li>titulo</li>
-              <li>ano</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
-  <script src="js/index.js"></script>
+  <script src="js/lancamentos.js"></script>
 
 
 </body>
