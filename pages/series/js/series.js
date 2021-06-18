@@ -1,5 +1,5 @@
 
-function inicializarLancamentos() {
+function inicializarSeries() {
     let xhr1 = new XMLHttpRequest();
     xhr1.onload = carregarFilmes;
     xhr1.open('GET', 'https://api.themoviedb.org/3/tv/popular?api_key=44d302b5c67a19b15c6effc9654af134&language=pt-BR&page=1')

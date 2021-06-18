@@ -1,5 +1,5 @@
 
-function inicializarLancamentos() {
+function inicializarPopular() {
     let xhr1 = new XMLHttpRequest();
     xhr1.onload = carregarFilmes;
     xhr1.open('GET', 'https://api.themoviedb.org/3/movie/top_rated?api_key=44d302b5c67a19b15c6effc9654af134&language=en-US&page=1')
