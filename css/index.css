@@ -20,7 +20,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
   }
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
     width: 0.25rem;
 
 }
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
-}
+}*/
 h1{
     font-family: 'Josefin Sans';
     font-size: 4rem;
@@ -124,6 +124,7 @@ main {
 }
 
 .logo i{
+    width: 50px;
     transform: rotate(0deg);
     transition: var(--transition-speed);
 }
