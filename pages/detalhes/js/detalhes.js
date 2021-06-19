@@ -30,6 +30,7 @@ function carregarFilme() {
           <li><strong>Ganeros:</strong>${generos}</li>
           <li><strong>Ano:</strong>${newDate[0]}</li>
           <li><strong>Orçamento:</strong>${dadosFilme.budget}</li>
+          <li><a href="${dadosFilme.homepage}" target="_blank">--- SITE OFICIAL DO FILME ---</a></li>
           <li><strong>Sinopse: </strong>${dadosFilme.overview}</li>
           </ul>
           </div>
