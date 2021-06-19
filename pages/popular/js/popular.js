@@ -25,7 +25,7 @@ function renderizarFilmes(dadosFilme) {
     var newDate = dadosFilme.release_date.split('-');
     var preRender = [];
     let preRenderText = `
-            <div class="movie-card-popular" onclick="mostrarDetalhes(${dadosFilme.id})">
+            <div class="movie-card-popular" onclick="mostrarDetalhes(${dadosFilme.id},2)">
                 <div class="movie-poster-popular">
                     <img src="https://image.tmdb.org/t/p/w185${dadosFilme.poster_path}" alt="">
                 </div>

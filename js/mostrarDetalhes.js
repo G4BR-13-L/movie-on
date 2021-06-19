@@ -1,5 +1,9 @@
-function mostrarDetalhes(id){
+function mostrarDetalhes(id, rota){
     localStorage.setItem('filme_id', id);
     console.log('Detalhes do filme '+ id)
-    window.location.replace("/movie-on/pages/detalhes/detalhes.html")
+    if(rota == 1){
+        window.location.href = "pages/detalhes/detalhes.html"
+    }else{
+        window.location.href = "../detalhes/detalhes.html"
+    }
 }
