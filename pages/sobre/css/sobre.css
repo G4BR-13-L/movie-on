@@ -1,0 +1,45 @@
+.main-detalhes {
+    height: 100vh;
+}
+
+.container-sobre {
+    width: 700px;
+    margin: 50px auto;
+}
+
+p, h2 {
+    margin: 10px;
+}
+
+.eu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 400px;
+    text-align: center;
+}
+
+/* Telas pequenas */
+
+@media only screen and (max-width: 600px) {
+    .main-detalhes {
+        height: auto;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .conjunto-detalhe {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        width: 100%;
+        height: auto;
+        background-color: var(--bg-primary);
+    }
+    .container-detalhes {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        height: auto;
+    }
+}

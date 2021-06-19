@@ -3,63 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@400;900&display=swap"rel="stylesheet">
 
   <!--======CSSS=======-->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="css/sobre.css">
   <title>Movie On</title>
 </head>
 
-<body onload="inicializacao()">
+<body onload="buscarFilme()">
   <nav class="navbar">
     <ul class="navbar-nav">
-      <li class="logo" onclick="inicializacao()">
+      <li class="logo">
         <a href="#" class="nav-link">
           <span class="link-text logo-text">MovieOn</span>
           <i class='bx bxs-right-arrow-square'></i>
         </a>
       </li>
       <li class="nav-item">
-        <a href="pages/pesquisa/pesquisa.html" class="nav-link">
+        <a href="../pesquisa/pesquisa.html" class="nav-link">
           <i class='bx bxs-search-alt-2'></i>
           <span class="link-text">Pesquisa</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="../../index.html" class="nav-link">
           <i class='bx bxs-movie-play'></i>
           <span class="link-text">Filmes</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="pages/popular/popular.html" class="nav-link">
+        <a href="#" class="nav-link">
           <i class='bx bxs-star'></i>
           <span class="link-text">Populares</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="pages/lancamentos/lancamentos.html" class="nav-link">
+        <a href="../lancamentos/lancamentos.html" class="nav-link">
           <i class='bx bxs-coupon'></i>
           <span class="link-text">Lançamentos</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="pages/series/series.html" class="nav-link">
+        <a href="#" class="nav-link">
           <i class='bx bxs-tv'></i>
-          <span class="link-text">Series & tv</span>
+          <span class="link-text">Series & Tv</span>
         </a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <i class='bx bx-code-alt' ></i>
+          <i class='bx bx-code-alt'></i>
           <span class="link-text">Sobre o Trabalho</span>
         </a>
       </li>
@@ -67,29 +67,21 @@
   </nav>
 
 
-  <main>
-    <h1 class="page-title">Filmes</h1>
-    <section>
-      <h2>Ação e aventura</h2>
-      <div class="container" id="g28">
-        
+  <main class="main-detalhes">
+    <h1 class="page-title">Sobre</h1>
+
+    <div class="container-sobre">
+      <h2>Desenvolvimento de interfaces Web</h2>
+      <p>18/06/2021 | Trabalho pŕatico 2 | Codenome Movie-On</p>
+      <p>Engenharia de software - PUC Minas</p>
+
+      <h3>-> Gabriel Victor Couto</h3>
+      <div class="eu">
+        <a href="https://github.com/G4BR-13-L/movie-on" target="_blank"><i class='bx bxl-github'></i></a>
       </div>
-    </section>
-    <section>
-      <h2>Drama e suspense</h2>
-      <div class="container" id="g18">
-        
-      </div>
-    </section>
-    <section>
-      <h2>Animações</h2>
-      <div class="container" id="g16">
-      
-      </div>
-    </section>
+
+    </div>
   </main>
-  <script src="js/index.js"></script>
-  <script src="js/mostrarDetalhes.js"></script>
 
 
 </body>
