@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@400;900&display=swap"rel="stylesheet">
 
   <!--======CSSS=======-->
   <link rel="stylesheet" href="../../css/index.css">
-  <link rel="stylesheet" href="css/lancamentos.css">
+  <link rel="stylesheet" href="css/detalhes.css">
   <title>Movie On</title>
 </head>
 
-<body onload="inicializarLancamentos()">
+<body onload="buscarFilme()">
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
@@ -38,57 +38,47 @@
       </li>
 
       <li class="nav-item">
-        <a href="../popular/popular.html" class="nav-link">
+        <a href="#" class="nav-link">
           <i class='bx bxs-star'></i>
           <span class="link-text">Populares</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="" class="nav-link">
+        <a href="../lancamentos/lancamentos.html" class="nav-link">
           <i class='bx bxs-coupon'></i>
           <span class="link-text">Lançamentos</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="../series/series.html" class="nav-link">
+        <a href="#" class="nav-link">
           <i class='bx bxs-tv'></i>
-          <span class="link-text">Series & tv</span>
+          <span class="link-text">Series & Tv</span>
         </a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <i class='bx bx-code-alt' ></i>
+          <i class='bx bx-code-alt'></i>
           <span class="link-text">Sobre o Trabalho</span>
         </a>
       </li>
     </ul>
   </nav>
 
-  
-  <main>
-    <h1 class="page-title">Lançamentos</h1>
-    
-    <div class="container-lancamentos">
-        <!--
-        <div class="movie-card-lancamentos">
-          <div class="movie-poster-lancamentos">
-            <img src="https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/Ready-Player-One-recreate-poster-2.jpg"
-            alt="">
-          </div>
-          <div class="movie-info-lancamentos">
-            <ul>
-              <li>titulo</li>
-              <li>ano</li>
-            </ul>
-          </div>
-        </div>
-      -->
+
+  <main class="main-detalhes">
+    <h1 class="page-title">Detalhes</h1>
+
+    <div class="container-detalhes">
+      <div class="conjunto-detalhe">
+
       </div>
+
+    </div>
+    </div>
   </main>
-  <script src="js/lancamentos.js"></script>
-  <script src="../../js/mostrarDetalhes.js"></script>
+  <script src="js/detalhes.js"></script>
 
 
 </body>

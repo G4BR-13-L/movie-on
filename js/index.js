@@ -49,7 +49,7 @@ function renderizarFilmes(dadosFilme, genero) {
     var newDate = dadosFilme.release_date.split('-');
     var preRender = [];
     let preRenderText = `
-            <div class="movie-card">
+            <div class="movie-card" onclick="mostrarDetalhes(${dadosFilme.id})">
                 <div class="movie-poster">
                     <img src="https://image.tmdb.org/t/p/w185${dadosFilme.poster_path}" alt="">
                 </div>
