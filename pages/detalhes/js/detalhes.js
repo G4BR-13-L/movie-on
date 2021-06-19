@@ -12,10 +12,12 @@ function carregarFilme() {
     var container = document.querySelector(`div.conjunto-detalhe`)
     var newDate = dadosFilme.release_date.split('-');
     var generos = [];
-    for(let i = 0 ; i < dadosFilme.genres; i++){
+    for(let i = 0 ; i < dadosFilme.genres.length; i++){
+      console.log(dadosFilme.genres[i].name);
         generos.push(dadosFilme.genres[i].name);
     }
-    generos.join(",")
+    generos.join(", ")
+    console.log(generos)
     var preRender = [];
     let preRenderText = `
     <div class="detalhe-poster">
@@ -27,7 +29,7 @@ function carregarFilme() {
           <li><strong>Título:</strong>${dadosFilme.original_title}</li>
           <li><strong>Ganeros:</strong>${generos}</li>
           <li><strong>Ano:</strong>${newDate[0]}</li>
-          <li><strong>Orçamento:</strong>${dadosFilme.buget}</li>
+          <li><strong>Orçamento:</strong>${dadosFilme.budget}</li>
           <li><strong>Sinopse: </strong>${dadosFilme.overview}</li>
           </ul>
           </div>
