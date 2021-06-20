@@ -4,6 +4,7 @@
 
 var containerCor = document.querySelector('html.view');
 function varificaTema() {
+    let containerCor = document.querySelector('html.view');
     let tema1 = JSON.parse(localStorage.getItem('darktheme'));
     if (tema) {
         document.querySelector("input#switch-1").checked = false;
