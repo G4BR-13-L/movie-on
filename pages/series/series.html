@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="view" data-theme="default">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap"
+    rel="stylesheet">
 
   <!--======CSSS=======-->
   <link rel="stylesheet" href="../../css/index.css">
@@ -59,19 +60,29 @@
       </li>
       <li class="nav-item">
         <a href="../sobre/sobre.html" class="nav-link">
-          <i class='bx bx-code-alt' ></i>
+          <i class='bx bx-code-alt'></i>
           <span class="link-text">Sobre o Trabalho</span>
         </a>
       </li>
     </ul>
   </nav>
 
-  
+
   <main>
-    <h1 class="page-title">Series & Tv</h1>
-    
+    <header>
+
+      <h1 class="page-title">Series & Tv</h1>
+      <div class="demo">
+        <form action="#">
+          <div class="switch">
+            <input id="switch-1" type="checkbox" class="switch-input" checked="checked">
+            <label for="switch-1" class="switch-label">Switch</label>
+          </div>
+        </form>
+      </div>
+    </header>
     <div class="container-series">
-        <!--
+      <!--
         <div class="movie-card-lancamentos">
           <div class="movie-poster-lancamentos">
             <img src="https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/Ready-Player-One-recreate-poster-2.jpg"
@@ -85,10 +96,10 @@
           </div>
         </div>
       -->
-      </div>
+    </div>
   </main>
   <script src="js/series.js"></script>
-
+  <script src="../../js/trocarTema.js"></script>
 
 </body>
 
