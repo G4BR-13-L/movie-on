@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="view" data-theme="default">
 
 <head>
   <meta charset="UTF-8">
@@ -38,7 +38,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="../popular/popular.html" class="nav-link">
           <i class='bx bxs-star'></i>
           <span class="link-text">Populares</span>
         </a>
@@ -68,7 +68,17 @@
 
   
   <main>
-    <h1 class="page-title">Popular</h1>
+    <header>
+      <h1 class="page-title">Popular</h1>
+      <div class="demo">
+        <form action="#">
+          <div class="switch">
+            <input id="switch-1" type="checkbox" class="switch-input" checked="checked">
+            <label for="switch-1" class="switch-label">Switch</label>
+          </div>
+        </form>
+      </div>
+    </header>
     
     <div class="container-popular">
         <!--
@@ -89,7 +99,10 @@
   </main>
   <script src="js/popular.js"></script>
   <script src="../../js/mostrarDetalhes.js"></script>
-
+  <script src="../../js/trocarTema.js"></script>
+  <script>
+    varificaTema() 
+  </script>
 
 
 </body>

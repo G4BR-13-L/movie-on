@@ -1,6 +1,9 @@
+/*=======================================*/
+
 :root {
     /* CSS HEX */
-    --rich-black-fogra-39: #0c090dff;
+    --bg-color: #fff;
+    --txt-color: #000 --rich-black-fogra-39: #0c090dff;
     --ua-red: #e01a4fff;
     --fire-opal: #f15946ff;
     --orange-yellow: #f9c22eff;
@@ -14,15 +17,32 @@
     font-family: 'Open Sans';
 }
 
-*{
+[data-theme="dark"] {
+    --bg-color: #000;
+    --txt-color: #fff;
+    --rich-black-fogra-39: #0c090dff;
+    --ua-red: #e01a4fff;
+    --fire-opal: #f15946ff;
+    --orange-yellow: #f9c22eff;
+    --maximum-blue: #53b3cbff;
+    --azure-x-11-web-color: #dbe8ebff;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #010111;
+    --bg-secondary: #010111;
+    --transition-speed: 600ms;
+    font-family: 'Open Sans';
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-  }
-/*body::-webkit-scrollbar {
-    width: 0.25rem;
+}
 
+body::-webkit-scrollbar {
+    width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -31,18 +51,27 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
-}*/
-h1{
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
     font-family: 'Josefin Sans';
     font-size: 4rem;
 }
-h2{
+
+h2 {
     font-family: 'Josefin Sans';
     font-size: 2rem;
 }
+
 main {
     margin-left: 5rem;
     padding: 1rem;
+    background-color: var(--bg-color) !important;
+    color: var(--txt-color) !important;
 }
 
 .navbar {
@@ -52,7 +81,8 @@ main {
     overflow: scroll;
     z-index: 5;
 }
-.navbar i{
+
+.navbar i {
     font-size: 2rem;
     color: var(--ua-red);
 }
@@ -71,26 +101,25 @@ main {
     width: 100%;
 }
 
-
 .nav-link {
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     text-decoration: none;
     transition: var(--transition-speed);
 }
 
 .nav-link:hover {
-    filter: opacity(1) ;
+    filter: opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
-    
 }
 
 .link-text {
     display: none;
     margin-left: 1rem;
+    color: var(--txt-color) !important;
 }
 
 .nav-link i {
@@ -123,7 +152,7 @@ main {
     width: 100%;
 }
 
-.logo i{
+.logo i {
     width: 50px;
     transform: rotate(0deg);
     transition: var(--transition-speed);
@@ -140,60 +169,148 @@ main {
     transform: rotate(-180deg);
 }
 
-.container{
+.container {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    overflow-y:hidden;
+    overflow-y: hidden;
     align-items: center;
 }
-.movie-card{
+
+.movie-card {
     min-width: 250px;
     border-radius: 20px;
     max-height: 390px;
     margin: 0 10px;
 }
-.movie-poster{
+
+.movie-poster {
     position: relative;
     bottom: 0;
     top: 0;
     margin-top: auto;
-    z-index:1;
+    z-index: 1;
     width: 100%;
     overflow: hidden;
     transition: 200ms;
-   
 }
-.movie-poster img{
+
+.movie-poster img {
     width: 100%;
     border-radius: 20px;
 }
-.movie-poster:hover{
+
+.movie-poster:hover {
     filter: opacity(0);
 }
-.movie-info{
+
+.movie-info {
     max-height: 150px;
-    z-index:0;
+    z-index: 0;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     padding: 20px;
     transform: translateY(-160%);
-    
 }
-.movie-info ul{
+
+.movie-info ul {
     list-style: none;
 }
 
+/*Ativar e desativar o Dark Mode*/
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.demo {
+    margin: 0px 100px 0px;
+}
 
+/**
+   * Switch Styles
+   */
 
+/* Variables */
 
+/* Switch Container */
 
+.switch {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the checkbox input (only needed for `:checked` property) */
+
+.switch-input {
+    display: none;
+}
+
+/* Switch */
+
+.switch-label {
+    display: block;
+    width: 100px;
+    height: 50px;
+    text-indent: -150%;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Switch Rail & Knob */
+    /* Switch Rail */
+    /* Switch Knob */
+}
+
+.switch-label:before, .switch-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.switch-label:before {
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+    border-radius: 9999em;
+    transition: background-color 0.25s ease;
+}
+
+.switch-label:after {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    transition: left 0.25s ease;
+}
+
+/* When input is checked */
+
+.switch-input:checked+.switch-label {
+    /* Switch Rail */
+    /* Switch Knob */
+}
+
+.switch-input:checked+.switch-label:before {
+    background-color: var(--ua-red);
+}
+
+.switch-input:checked+.switch-label:after {
+    left: 50px;
+}
 
 /* Telas pequenas */
+
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
@@ -212,7 +329,7 @@ main {
     main {
         margin: 0;
     }
-    .container{
+    .container {
         margin-top: 0px !important;
         display: flex;
         flex-direction: row;
@@ -220,19 +337,37 @@ main {
         overflow-x: auto;
         height: 500px;
     }
-    .movie-card{
+    .movie-card {
         margin: 0 10px;
         max-height: 500px;
     }
-    .movie-poster{
+    .movie-poster {
         top: 0;
         width: 100%;
         overflow: hidden;
         transition: 200ms;
-       
     }
-    .movie-info{
+    .movie-info {
         transform: translateY(0) !important;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .demo {
+        margin: 10px;
+    }
+    .switch-label {
+        width: 50px;
+        height: 25px;
+    }
+    .switch-label:after {
+        width: 25px;
+        height: 25px;
+    }
+    .switch-input:checked+.switch-label:after {
+        left: 25px;
     }
 }
 
@@ -257,5 +392,3 @@ main {
         left: 0px;
     }
 }
-
-

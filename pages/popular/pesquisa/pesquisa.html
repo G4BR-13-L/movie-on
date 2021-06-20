@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="view" data-theme="default">
 
 <head>
   <meta charset="UTF-8">
@@ -68,8 +68,17 @@
 
   
   <main class="main-pesquisa">
-    <h1 class="page-title">Pesquisa</h1>
-    
+    <header>
+      <h1 class="page-title">Pesquisa</h1>
+      <div class="demo">
+        <form action="#">
+          <div class="switch">
+            <input id="switch-1" type="checkbox" class="switch-input" checked="checked">
+            <label for="switch-1" class="switch-label">Switch</label>
+          </div>
+        </form>
+      </div>
+    </header>
     <div class="container-pesquisa">
       <div class="input-container">
         <input type="text" class="pesquisa" placeholder="Pesquise por um filme"/>
@@ -82,7 +91,7 @@
   </main>
   <script src="js/pesquisa.js"></script>
   <script src="../../js/mostrarDetalhes.js"></script>
-
+  <script src="../../js/trocarTema.js"></script>
 
 </body>
 

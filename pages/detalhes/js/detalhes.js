@@ -1,5 +1,6 @@
 /**/
 function buscarFilme() {
+  varificaTema()
     var filme_id = localStorage.getItem('filme_id');
     let xhr1 = new XMLHttpRequest();
     xhr1.onload = carregarFilme;
